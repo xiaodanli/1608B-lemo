@@ -1,0 +1,19 @@
+ul li, ol li {
+  list-style: none; }
+
+.none {
+  display: none; }
+
+* {
+  touch-action: none;
+  margin: 0;
+  padding: 0; }
+
+.red {
+  color: red; }
+
+.green {
+  color: green; }
+
+.gray {
+  color: gray; }

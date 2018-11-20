@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>柠檬记账</title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/mui.picker.css">
+		<link rel="stylesheet" href="css/mui.poppicker.css">
+		<link rel="stylesheet" href="css/mui.dtpicker.css">
+	</head>
+	<body>
+		<!-- 侧滑导航根容器 -->
+		<div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+			<!-- 菜单容器 -->
+			<aside class="mui-off-canvas-left">
+				<div class="mui-scroll-wrapper  aside-type">
+					<div class="mui-scroll">
+						<!-- 菜单具体展示内容 -->
+						<h1>收支类型</h1>
+						<ul class="type">
+							<li data-id="0">全部支出</li>
+							<li data-id="1">全部收入</li>
+						</ul>
+						<h1>收支分类</h1>
+						<div class="classify-wrap">
+							<ul class="classify pay" data-id="0"></ul>
+							<ul class="classify income" data-id="1"></ul>
+						</div>
+						
+						<button type="button" class="mui-btn mui-btn-danger" id="close-aside">关闭侧边栏</button>
+					</div>
+				</div>
+			</aside>
+			<!-- 主页面容器 -->
+			<div class="mui-inner-wrap">
+				<!-- header -->
+				<header class="mui-bar mui-bar-nav header">
+					<div class="header-t">
+						<span></span>
+						<div class="time">
+							<span class="select-month">月</span>
+							<span class="select-date"></span>
+						</div>
+					</div>
+					<div class="total-pay">本月花费:0</div>
+					<div class="total-com">本月收入:0</div>
+				</header>
+				<!-- header -->
+				<!-- 内容 -->
+				<div class="mui-content">
+					<div class="con-title">
+						<span class="mui-icon mui-icon-bars" id="open-aside"></span>
+						<div class="tab-list">
+							<span class="active" data-id="0">账单</span>
+							<span data-id="1">图表</span>
+						</div>
+						<span class="mui-icon mui-icon-bars"></span>
+					</div>
+					<div class="content">
+						<section class="bill-wrap">
+							<div class="mui-content mui-scroll-wrapper">
+								<div class="mui-scroll">
+									<!-- 主界面具体展示内容 -->
+									<!-- 按月显示 -->
+									<div class="month-wrap">
+										
+									</div>
+									<!-- 按年显示 -->
+									<div class="year-wrap  none">
+										<ul class="mui-table-view">
+											
+										</ul>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="table-wrap none">
+							<div class="mui-slider">
+								<div class="mui-slider-group">
+									<!--第一个内容区容器-->
+									<div class="mui-slider-item">
+										<!-- 具体内容 -->
+										<div id="main" style="width: 300px;height:200px;"></div>
+									</div>
+									<!--第二个内容区-->
+									<div class="mui-slider-item">
+										<!-- 具体内容 -->
+										
+										222
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+
+				<!-- 底部导航 -->
+				<nav class="mui-bar mui-bar-tab">
+					<a class="mui-tab-item mui-active" href="#">
+						<span class="mui-icon mui-icon-home"></span>
+						<span class="mui-tab-label">首页</span>
+					</a>
+					<a class="mui-tab-item" href="#">
+						<span class="mui-icon mui-icon-email"></span>
+						<span class="mui-tab-label">圈子</span>
+					</a>
+					<a class="mui-tab-item" href="#">
+						<span class="mui-icon mui-icon-contact"></span>
+						<span class="mui-tab-label">撒钱中</span>
+					</a>
+					<a class="mui-tab-item" href="#">
+						<span class="mui-icon mui-icon-gear"></span>
+						<span class="mui-tab-label">我的</span>
+					</a>
+				</nav>
+				<div class="mui-off-canvas-backdrop"></div>
+				<!-- 去添加账单界面 -->
+				<div class="go-bill">
+					<span class="mui-icon mui-icon-plus"></span>
+				</div>
+			</div>
+		</div>
+		<script src="js/libs/require.js" data-main="./js/page/index.js"></script>
+	</body>
+</html>

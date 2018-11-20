@@ -1,0 +1,86 @@
+.header {
+  width: 100%;
+  height: 100px;
+  background: yellow; }
+  .header .tab-list {
+    width: 100px;
+    height: 30px;
+    margin: 5px auto;
+    display: flex;
+    border: 1px solid gray;
+    border-radius: 20px;
+    overflow: hidden; }
+    .header .tab-list span {
+      flex: 1;
+      text-align: center;
+      line-height: 30px;
+      font-size: 12px; }
+      .header .tab-list span:nth-child(1) {
+        border-right: 1px solid gray; }
+      .header .tab-list span.active {
+        background: #000;
+        color: yellow; }
+  .header .ipt-wrap {
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    border-bottom: 1px solid gray;
+    text-align: center; }
+    .header .ipt-wrap span {
+      border-right: 1px solid gray; }
+
+.mui-bar-nav ~ .mui-content {
+  padding-top: 100px; }
+
+.mui-slider.classify-list .mui-slider-group .mui-slider-item > div {
+  display: flex;
+  flex-wrap: wrap; }
+
+.mui-slider.classify-list .mui-slider-group .mui-slider-item dl {
+  width: 25%; }
+  .mui-slider.classify-list .mui-slider-group .mui-slider-item dl dt {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    background: gray;
+    margin: 10px auto 0 auto; }
+    .mui-slider.classify-list .mui-slider-group .mui-slider-item dl dt span.mui-icon {
+      font-size: 30px;
+      vertical-align: middle; }
+  .mui-slider.classify-list .mui-slider-group .mui-slider-item dl dd {
+    text-align: center; }
+  .mui-slider.classify-list .mui-slider-group .mui-slider-item dl.active dt {
+    background: yellow; }
+
+.time-wrap {
+  width: 100%;
+  padding-left: 15px;
+  line-height: 44px;
+  color: gray;
+  font-size: 12px; }
+  .time-wrap span.mui-icon {
+    font-size: 14px; }
+
+.keyboard {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+  .keyboard ul {
+    display: flex;
+    border-top: 1px solid gray; }
+    .keyboard ul li {
+      width: 25%;
+      border-right: 1px solid gray; }
+      .keyboard ul li span {
+        width: 100%;
+        height: 44px;
+        display: block;
+        text-align: center;
+        line-height: 44px;
+        border-bottom: 1px solid gray; }
+      .keyboard ul li:last-child span {
+        border: none;
+        line-height: 176px; }

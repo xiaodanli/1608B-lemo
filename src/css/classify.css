@@ -1,0 +1,49 @@
+.header {
+  background: yellow; }
+
+.c-name {
+  width: 100%;
+  height: 54px;
+  padding: 10px 15px;
+  display: flex;
+  background: #fff; }
+  .c-name span {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: yellow;
+    border-radius: 50%;
+    margin-right: 10px; }
+  .c-name input {
+    flex: 1;
+    text-align: right;
+    border: none; }
+
+.c-icon-list {
+  background: #fff;
+  padding-bottom: 10px; }
+  .c-icon-list ul {
+    display: flex;
+    flex-wrap: wrap; }
+    .c-icon-list ul li {
+      width: 20%; }
+      .c-icon-list ul li span {
+        width: 40px;
+        height: 40px;
+        background: yellow;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        margin: 10px auto 0 auto;
+        display: block; }
+
+.save-btn {
+  width: 80%;
+  height: 40px;
+  background: yellow;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%); }
